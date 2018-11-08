@@ -1,0 +1,42 @@
+<!-- Works like "textContent" in js. -->
+text()
+<!-- examples -->
+<!-- returns the text in the h1 -->
+$("h1").text();
+<!-- Returns the combined text from all divs -->
+$("div").text();
+<!--Adding an argument changes the text  -->
+$("p").text("New stuff in my p element");
+
+
+<!-- Changes not just the text content, but the entire html of the selected element -->
+html()
+<!-- example -->
+<!-- This will change the h1 into a link to google -->
+$("h1").html("<h1><a href="http://www.google.com">This is the new h1. Its now a link to google</a></h1>")
+
+
+<!-- Allows you to select the attribute of an element and change it -->
+attr()
+<!-- example -->
+<!-- changes the src of the attribute to the second argument -->
+$("a").attr("src", "http://www.uglyfish.com");
+<!-- This will select all "a" elements, and change them all to the new src -->
+<!-- in order to only select the first one, use: -->
+$("a:first-of-type").attr()  or $("a:first").attr
+<!-- Use .last to select the last of the elements -->
+
+
+<!-- Returns the value of selected element -->
+val()
+<!-- Pass in an argument to change the value of the selected element -->
+$("ul").val() or $("ul").val("New stuff")
+
+<!-- Works almost the same as it does in javascript -->
+<!-- Difference is you can add, remove or toggle the class on all selected elements, without having to loop through them  -->
+addClass()
+removeClass()
+toggleClass()
+<!-- examples -->
+$("li").addClass("potatoes");
+<!-- Adds the class to all lis -->

@@ -1,0 +1,21 @@
+
+
+click()
+<!-- example -->
+$("button").click(function){
+  alert('someone clicked a button!');
+}
+<!-- So when any button is clicked, this function will run -->
+
+
+<!-- A key event includes anything with an input setting -->
+keydown() <!-- event fires after the key goes down -->
+keyup() <!-- event fires after the key goes back up -->
+keypress() <!-- event firse between the down and the up -->
+
+<!-- Does all the things that the above things do. It's very similar to "addEventListener" -->
+on()
+<!-- example -->
+$('h1 button').on("mouseenter", function(){
+  console.log("Don't touch this button!")
+})

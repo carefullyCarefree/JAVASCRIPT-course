@@ -1,0 +1,180 @@
+body {
+  font-family: Open Sans;
+}
+
+/*TOP SECTION*/
+
+header {
+  height: 40vh;
+  background-image: url(back.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+header h2 {
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+
+header h1, header h2 {
+  color: white;
+  font-weight: lighter;
+}
+
+.boxes {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .7rem;
+  width: 22rem;
+  height: 3rem;
+  margin: .25rem;
+}
+
+.incomeBox {
+  background-color: rgb(59, 180, 186);
+}
+
+.expensesBox {
+  background-color: rgb(247, 83, 83);
+  margin-bottom: 1rem;
+}
+
+.budget-right-money {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.budget-left-text, .budget-left-text {
+  font-size: .8rem;
+  color: rgb(56, 56, 56);
+}
+
+.budget-value-income {
+  margin-right: 3rem;
+}
+
+.budget-percent, .budget-percent-value {
+  padding: .35rem;
+  margin-left: .7rem;
+  font-size: .7rem;
+  background-color: rgb(207, 111, 111);
+  border-radius: 2px;
+}
+
+
+
+/* INPUT BAR INFO */
+
+.inputBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: rgba(222, 222, 220, 0.88);
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.plusMinus-select, .description, .amount, button {
+  margin: 0 .4rem;
+  height: 2.5rem;
+  padding: .5rem;
+}
+
+.description, .amount, .plusMinus-select {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+}
+
+.outline:focus {
+    outline: none;
+    border: 1px solid rgb(59, 180, 186);
+}
+
+.plusMinus-select {
+  /* border: 1px solid rgb(59, 180, 186); */
+  width: 3rem;
+}
+
+.description {
+  width: 25rem;
+}
+
+.amount {
+  width: 6rem;
+}
+
+.ion-ios-checkmark-outline, .income-title, .incomeItemValue {
+  color: rgb(59, 180, 186);
+}
+
+.ion-ios-checkmark-outline {
+  font-size: 2rem;
+}
+
+.red-focus:focus {
+  outline: none;
+  border: 1px solid rgb(247, 83, 83);
+}
+
+.red {
+  color: rgb(247, 83, 83) !important;
+}
+
+/* INCOME AND EXPENSE SECTION */
+
+.moneyInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: 4.5rem auto;
+  font-size: 1.2rem;
+}
+
+.expense-title, .expenseItemValue {
+  color: rgb(247, 83, 83);
+}
+
+.income-title, .expense-title {
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* INVISIBLE SECTION */
+
+.incomeItemTitle, .expenseItemTitle {
+  font-size: 1rem;
+}
+
+.incomeItem, .expenseItem {
+  justify-content: space-between;
+  margin: 0 1rem;
+  border-top: 1px solid rgb(199, 199, 199);
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.incomeItemRight, .expenseItemRight, .incomeItem, .expenseItem {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.incomeItems:nth-child(odd) {
+  background-color: rgb(223, 223, 223);
+}
+
+#item__delete--btn {
+
+}

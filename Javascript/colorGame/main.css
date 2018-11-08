@@ -1,0 +1,73 @@
+html, body, main, h1, h2, h3, h4, h5, h6, nav, ul, li, a, button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body {
+  background-color: #232323
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 1rem;
+  background-color: rgb(6, 201, 221);
+}
+nav {
+  width: 100%;
+  background-color: white;
+  height: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#message {
+  display: inline-block;
+  width: 20%;
+}
+button {
+  background-color: white;
+  height: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: rgb(6, 201, 221);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all  0.5s;
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(43, 60, 219);
+  color: white;
+}
+#rgb {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.square {
+  width: 30%;
+  padding-bottom: 30%;
+  background-color: blue;
+  margin: 1.66%;
+  border-radius: 10%;
+  float: left;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+}
+.blue {
+  background-color: rgb(6, 201, 221);
+  color: white;
+}

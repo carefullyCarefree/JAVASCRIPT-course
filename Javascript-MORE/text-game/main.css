@@ -1,0 +1,75 @@
+html {
+  color: whitesmoke;
+  font-family: 'Fahkwang', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  padding: 3rem;
+  font-size: 3rem;
+  margin-bottom: 20%;
+}
+
+.square {
+  max-width: 50rem;
+  height: 30rem;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+  margin: 2rem;
+}
+
+h1 {
+  margin-bottom: 10%;
+}
+
+.name {
+  color: red;
+}
+
+.weapon {
+  color: grey;
+}
+
+.location {
+  color: rgb(128, 120, 214);
+}
+
+li {
+  list-style-type: none;
+  padding: .5rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+li:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+button {
+  text-align: center;
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.slideOn {
+    display: flex;
+}

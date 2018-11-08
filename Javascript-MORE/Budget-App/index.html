@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="mcleod-reset.css">
+  <link rel="stylesheet" href="main.css">
+  <title>SAVE YO MONEY</title>
+</head>
+<body>
+  <header>
+      <h1>
+        Available Budget in <span class="year">2018</span>
+      </h1>
+      <h2>
+        <div class="currentMoney">+ 2,345.64</div>
+      </h2>
+      <div class="incomeBox boxes">
+          <div class="budget-left-text">INCOME</div>
+          <div class="budget-right-money">
+            <div class="budget-value-income">+ 4,300.00</div>
+          </div>
+      </div>
+      <div class="expensesBox boxes">
+          <div class="budget-left-text">EXPENSES</div>
+          <div class="budget-right-money">
+            <div class="budget-value-expense">-2,300.00</div>
+            <div class="budget-percent total-budget-percent">45%</div>
+          </div>
+      </div>
+  </header>
+
+  <main>
+      <div class="inputBar">
+          <form action="get">
+              <select name="plusMinus" class="plusMinus-select outline" selected>
+                  <option value="inc">+</option>
+                  <option value="exp">-</option>
+              </select>
+          </form>
+          <input type="text" placeholder="Add description" class="description outline">
+          <input type="number" placeholder="Value" class="amount outline">
+          <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+      </div>
+
+    <div class="moneyInputs">
+        <div class="income-bracket">
+            <h1 class="income-title">INCOME</h1>
+
+            <div class="incomeItems">
+
+                <!-- <div class="incomeItem" id="inc-0">
+                    <div class="incomeItemTitle">Work</div>
+                    <div class="incomeItemRight">
+                        <div class="incomeItemValue">950</div>
+                        <div class="item-delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="incomeItem" id="inc-0">
+                    <div class="incomeItemTitle">Work</div>
+                    <div class="incomeItemRight">
+                        <div class="incomeItemValue">950</div>
+                        <div class="item-delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+        <div class="expense-bracket">
+            <h1 class="expense-title">EXPENSES</h1>
+
+            <div class="expenseItems">
+
+                <!-- <div class="expenseItem" id="exp-0">
+                    <div class="expenseItemTitle">Play</div>
+                    <div class="expenseItemRight">
+                        <div class="expenseItemValue">650</div>
+                        <div class="budget-percent-value">26%</div>
+                        <div class="item-delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="expenseItem" id="exp-0">
+                    <div class="expenseItemTitle">Play</div>
+                    <div class="expenseItemRight">
+                        <div class="expenseItemValue">650</div>
+                        <div class="budget-percent-value">26%</div>
+                        <div class="item-delete">
+                          <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+  </main>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

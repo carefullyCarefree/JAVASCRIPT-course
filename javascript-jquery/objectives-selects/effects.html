@@ -1,0 +1,13 @@
+<!-- Works like a css transition -->
+fadeout(), fadein(), fadetoggle
+<!-- removes whatever is selected -->
+remove()
+<!-- Example of a fadeout and remove -->
+$("button").on("click", function(){
+  $('div').fadeout(1000, function(){
+    $(this).remove();
+  });
+});
+
+<!-- animations the element to slide up or slide down -->
+slidedown, slideup, slidetoggle

@@ -1,0 +1,23 @@
+<!-- event listeners -->
+
+var par = document.querySelector("ul>li>p");
+
+par.addEventListener("click", function(){
+  alert("Something clicked the paragraph");
+})
+
+par.addEventListener("click", function(){
+  par.style.background = "green";
+})
+
+document.querySelector("ul>li>p").addEventListener("click", function (){
+  console.log("p was clicked");
+});
+
+var lis = document.querySelectorAll("li");
+
+for(var i = 0; i < lis.length; i++){
+  lis[i].addEventListener("click", function(){
+    this.style.color = "pink";
+  });
+}

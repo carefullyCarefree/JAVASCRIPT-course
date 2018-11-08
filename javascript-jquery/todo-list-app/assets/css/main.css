@@ -1,0 +1,105 @@
+body, html, main, div, h1, h2, h3, h4, h5, h6, p, section, nav, button, ul, li, a, footer, input, span, i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(77, 187, 209), rgb(247, 243, 162));
+}
+
+#container {
+  width: 360px;
+  margin: 10% auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: rgb(13, 141, 217);
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+button i {
+  color: white;
+  font-size: 1rem;
+}
+button {
+  background-color: transparent;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(217, 217, 217);
+  height: 2.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+  background-color: white;
+  border: 3px solid rgb(13, 141, 217);
+  outline: none;
+}
+
+input, li {
+  font-weight: bold;
+}
+
+li {
+  height: 2.2rem;
+  line-height: 2.2rem;
+  list-style-type: none;
+  color: rgb(72, 77, 76);
+}
+
+li:nth-child(even) {
+  background-color: rgb(217, 217, 217);
+}
+
+li:nth-child(odd) {
+  background-color: rgb(244, 244, 244);
+}
+
+i {
+  color: rgb(72, 77, 76);
+}
+span {
+  background-color: #e74c3c;
+  height: 2.2rem;
+  margin-right: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 0;
+  transition: 0.2s linear;
+  opacity: 0;
+
+}
+
+span i {
+  color: white;
+
+}
+
+li:hover span {
+  width: 2.2rem;
+  opacity: 1;
+}
+
+
+
+
+
+
+.completed {
+  color: grey;
+  text-decoration: line-through;
+}
